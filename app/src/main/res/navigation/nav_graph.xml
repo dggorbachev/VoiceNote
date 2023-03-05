@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recordsFragment">
+
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.dggorbachev.voicenotes.features.records_screen.ui.view.RecordsFragment"
+        android:label="fragment_records"
+        tools:layout="@layout/fragment_records" />
+
+    <action
+        android:id="@+id/moveToSaveNoteDialog"
+        app:destination="@id/saveNoteDialog"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/moveToRecordsFragment"
+        app:destination="@id/recordsFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <dialog
+        android:id="@+id/saveNoteDialog"
+        android:name="com.dggorbachev.voicenotes.features.save_screen.ui.SaveNoteDialog"
+        android:label="dialog_save_note"
+        tools:layout="@layout/dialog_save_note">
+        <argument
+            android:name="note_path"
+            app:argType="string" />
+    </dialog>
+</navigation>

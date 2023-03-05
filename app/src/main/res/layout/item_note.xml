@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/card_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/layoutLoader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTitle">
+
+                <ImageButton
+                    android:id="@+id/bLoad"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_upload"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarLoad"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/blue"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextAppearance.Title"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/layoutLoader"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Крутой трек – надо идти!" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/TextAppearance.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="14dp"
+                android:textColor="@color/gray"
+                app:layout_constraintBottom_toBottomOf="@id/progressBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="Сегодня в 12:51" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/TextAppearance.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                app:layout_constraintBottom_toBottomOf="@id/bPlay"
+                app:layout_constraintEnd_toStartOf="@id/bPlay"
+                app:layout_constraintTop_toTopOf="@id/bPlay"
+                tools:text="5:32" />
+
+            <ImageButton
+                android:id="@+id/bPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_play"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-1dp"
+                android:clickable="false"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_background"
+                android:progressTint="@color/blue"
+                android:splitTrack="false"
+                android:thumb="@null"
+                android:thumbTint="@android:color/transparent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

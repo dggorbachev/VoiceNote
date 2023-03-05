@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Voice Notes</string>
+    <string name="your_notes">Ваши записи</string>
+    <string name="date">%1$s в %2$s</string>
+    <string name="just_now">только что</string>
+    <string name="minute_nominative">%1$d минута назад</string>
+    <string name="minute_accusative">%1$d минуту назад</string>
+    <string name="minute_genitive">%1$d минуты назад</string>
+    <string name="minute_plural">%1$d минут назад</string>
+    <string name="hour_nominative">%1$d час назад</string>
+    <string name="hour_genitive">%1$d часа назад</string>
+    <string name="hour_plural">%1$d часов назад</string>
+    <string name="day_nominative">%1$d день назад</string>
+    <string name="day_genitive">%1$d дня назад</string>
+    <string name="day_plural">%1$d дней назад</string>
+    <string name="time_clock">%02d:%02d</string>
+    <string name="time_progress_duration">%02d:%02d / %02d:%02d</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="note_name">Текущее имя записи:</string>
+    <string name="enter_note_name">Введите название записи</string>
+    <string name="button_save">Сохранить</string>
+    <string name="button_cancel">Отмена</string>
+    <string name="end_on_3gp">Название нового файла должно заканчиваться на .3gp</string>
+    <string name="file_exists">Файл с таким именем уже существует</string>
+    <string name="server_exception">Не удалось найти сервер для загрузки файла</string>
+    <string name="save_exception">Не удалось сохранить файл</string>
+    <string name="save_success">Файл сохранен. Ссылка скопирована в буфер обмена.</string>
+    <string name="file_uploaded">Один из файлов уже загружается. Подождите…</string>
+
+    <integer name="com_vk_sdk_AppId">51572442</integer>
+</resources>

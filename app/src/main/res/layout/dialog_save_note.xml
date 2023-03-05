@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_bg"
+    android:orientation="vertical"
+    tools:context=".features.save_screen.ui.SaveNoteDialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp">
+
+        <TextView
+            android:id="@+id/tvTitleNote"
+            style="@style/TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/note_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNote"
+            style="@style/TextAppearance.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleNote"
+            tools:text="recording_04_03_2023_13_28_47.3gp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_30"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="@id/tvNote"
+            app:layout_constraintStart_toStartOf="@id/tvNote"
+            app:layout_constraintTop_toBottomOf="@id/tvNote">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInput"
+                style="@style/TextAppearance.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@null"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="start"
+                android:hint="@string/enter_note_name"
+                android:inputType="textMultiLine"
+                android:minHeight="104dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_50"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="34dp"
+            android:padding="5dp"
+            android:text="@string/button_cancel"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@id/tvSave"
+            app:layout_constraintTop_toBottomOf="@id/outlinedTextField" />
+
+        <TextView
+            android:id="@+id/tvSave"
+            style="@style/TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:padding="5dp"
+            android:text="@string/button_save"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/outlinedTextField" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

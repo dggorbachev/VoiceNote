@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Regular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Header" parent="TextAppearance.Medium">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="TextAppearance.Title" parent="TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Body" parent="TextAppearance.Regular">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
