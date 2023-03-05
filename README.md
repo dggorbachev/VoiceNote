@@ -18,13 +18,13 @@
 ## Демонстрация проделанной работы:
 
 - Запись заметки
-<img src= "https://github.com/dggorbachev/VoiceNote/blob/master/Demo/demo_record.gif" width="250" height="500" />
+<img src= "https://github.com/dggorbachev/VoiceNote/blob/main/demo/demo_record.gif" width="250" height="500" />
 
 - Обновление заметок
-<img src= "https://github.com/dggorbachev/VoiceNote/blob/master/Demo/demo_refresh.gif" width="250" height="500" />
+<img src= "https://github.com/dggorbachev/VoiceNote/blob/main/demo/demo_refresh.gif" width="250" height="500" />
 
 - Проигрывание аудио-заметки
-<img src= "https://github.com/dggorbachev/VoiceNote/blob/master/Demo/demo_play.gif" width="250" height="500" />
+<img src= "https://github.com/dggorbachev/VoiceNote/blob/main/demo/demo_play.gif" width="250" height="500" />
 
 - Выгрузка файла в документы VK
-<img src= "https://github.com/dggorbachev/VoiceNote/blob/master/Demo/demo_upload.gif" width="250" height="500" />
+<img src= "https://github.com/dggorbachev/VoiceNote/blob/main/demo/demo_upload.gif" width="250" height="500" />
